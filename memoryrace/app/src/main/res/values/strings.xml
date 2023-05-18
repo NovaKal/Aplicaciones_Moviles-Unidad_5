@@ -5,6 +5,13 @@
     <string name="login_email_hint">E-mail</string>
     <string name="login_password_hint">Password</string>
     <string name="login_button_login">Login</string>
-    <string name="login_button_desc">Join The Fun</string>
+    <string name="login_button_desc">Test your skills</string>
     <string name="login_text_register">New? Register Here!</string>
+
+    <string name="register_title">Register</string>
+    <string name="register_email_hint">Enter E-mail</string>
+    <string name="register_password_hint">Enter Password</string>
+    <string name="register_button_register">Register</string>
+    <string name="register_button_desc">Join The Fun</string>
+    <string name="register_text_login">Already Registered? Join Here!</string>
 </resources>
