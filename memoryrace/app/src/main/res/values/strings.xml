@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">memoryrace</string>
+    <string name="app_name">Memory Race</string>
+
+    <string name="login_title">Login</string>
+    <string name="login_email_hint">E-mail</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button_login">Login</string>
+    <string name="login_button_desc">Join The Fun</string>
+    <string name="login_text_register">New? Register Here!</string>
 </resources>
