@@ -1,17 +1,27 @@
 <resources>
     <string name="app_name">Memory Race</string>
+    <string name="back_text_login">Bye Bye!</string>
+    <string name="back_text_titleHome">Home</string>
 
     <string name="login_title">Login</string>
     <string name="login_email_hint">E-mail</string>
     <string name="login_password_hint">Password</string>
     <string name="login_button_login">Login</string>
-    <string name="login_button_desc">Test your skills</string>
+    <string name="login_button_desc">Button for login</string>
     <string name="login_text_register">New? Register Here!</string>
+    <string name="login_button_exit_desc">Button for exiting the app</string>
 
     <string name="register_title">Register</string>
     <string name="register_email_hint">Enter E-mail</string>
     <string name="register_password_hint">Enter Password</string>
     <string name="register_button_register">Register</string>
-    <string name="register_button_desc">Join The Fun</string>
+    <string name="register_button_desc">Button for register</string>
     <string name="register_text_login">Already Registered? Join Here!</string>
+
+    <string name="home_text_title">Home</string>
+    <string name="home_button_exit_desc">Button for exiting home screen</string>
+    <string name="home_imageButton_cardSelection_desc">Image button for card selection</string>
+    <string name="home_imageButton_cardBackside_desc">Image button for card backside selection</string>
+    <string name="home_imageButton_howToPlay_desc">Image button for information on how to play</string>
+    <string name="home_imageButton_aboutUs_desc">Image button for information about us</string>
 </resources>
