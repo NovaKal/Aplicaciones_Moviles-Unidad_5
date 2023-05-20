@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1075553231201",
+    "project_id": "memory-race",
+    "storage_bucket": "memory-race.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075553231201:android:6574ab97a84dd4a52a6520",
+        "android_client_info": {
+          "package_name": "co.edu.upb.memoryrace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075553231201-6i90h1n713hs1ionqe3e88bn4ig6v53a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ3kFmgyDaqtcGjsYHWvZjbldIrztW2cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075553231201-6i90h1n713hs1ionqe3e88bn4ig6v53a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,11 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_constraint"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/login_textView_title"
+        android:id="@+id/register_textView_title"
         android:layout_width="370dp"
         android:layout_height="40dp"
         android:layout_marginTop="228dp"
@@ -17,16 +18,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_textInputLayout_email"
+        android:id="@+id/register_textInputLayout_email"
         android:layout_width="370dp"
         android:layout_height="0dp"
         android:layout_marginTop="90dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_textView_title">
+        app:layout_constraintTop_toBottomOf="@+id/register_textView_title">
 
-        <EditText
-            android:id="@+id/login_editTextTextEmailAddress"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -35,20 +36,22 @@
             android:hint="@string/register_email_hint"
             android:importantForAutofill="yes"
             android:inputType="textEmailAddress"
-            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+            tools:ignore="LabelFor,SpeakableTextPresentCheck">
+
+        </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_textInputLayout_password"
+        android:id="@+id/register_textInputLayout_password"
         android:layout_width="370dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/login_textInputLayout_email"
-        app:layout_constraintStart_toStartOf="@+id/login_textInputLayout_email"
-        app:layout_constraintTop_toBottomOf="@+id/login_textInputLayout_email">
+        app:layout_constraintEnd_toEndOf="@+id/register_textInputLayout_email"
+        app:layout_constraintStart_toStartOf="@+id/register_textInputLayout_email"
+        app:layout_constraintTop_toBottomOf="@+id/register_textInputLayout_email">
 
-        <EditText
-            android:id="@+id/login_editTextTextPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -57,29 +60,42 @@
             android:hint="@string/register_password_hint"
             android:importantForAutofill="yes"
             android:inputType="textPassword"
-            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+            tools:ignore="LabelFor,SpeakableTextPresentCheck">
+
+        </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/login_button_login"
+        android:id="@+id/register_button_register"
         android:layout_width="370dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
-        android:text="@string/register_button_register"
         android:contentDescription="@string/register_button_desc"
-        app:layout_constraintEnd_toEndOf="@+id/login_textInputLayout_email"
-        app:layout_constraintStart_toStartOf="@+id/login_textInputLayout_email"
-        app:layout_constraintTop_toBottomOf="@+id/login_textInputLayout_password"
+        android:text="@string/register_button_register"
+        app:layout_constraintEnd_toEndOf="@+id/register_textInputLayout_email"
+        app:layout_constraintStart_toStartOf="@+id/register_textInputLayout_email"
+        app:layout_constraintTop_toBottomOf="@+id/register_textInputLayout_password"
         tools:ignore="VisualLintButtonSize" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/register_text_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register_text_login"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/login_textView_title"
-        app:layout_constraintStart_toStartOf="@+id/login_textView_title"
-        app:layout_constraintTop_toBottomOf="@+id/login_button_login" />
+        app:layout_constraintEnd_toEndOf="@+id/register_textView_title"
+        app:layout_constraintStart_toStartOf="@+id/register_textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/register_button_register" />
+
+    <ProgressBar
+        android:id="@+id/register_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/register_text_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_button_register" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

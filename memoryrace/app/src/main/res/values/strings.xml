@@ -18,7 +18,7 @@
     <string name="register_button_desc">Button for register</string>
     <string name="register_text_login">Already Registered? Join Here!</string>
 
-    <string name="home_text_title">Home</string>
+    <string name="home_text_title">Bienvenido Usuario</string>
     <string name="home_button_exit_desc">Button for exiting home screen</string>
     <string name="home_imageButton_cardSelection_desc">Image button for card selection</string>
     <string name="home_imageButton_cardBackside_desc">Image button for card backside selection</string>
