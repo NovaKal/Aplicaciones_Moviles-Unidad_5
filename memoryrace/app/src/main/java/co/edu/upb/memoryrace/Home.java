@@ -16,7 +16,7 @@ public class Home extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseUser user;
     TextView home_text_title;
-    ImageButton home_button_exit;
+    ImageButton home_button_exit, home_imageButton_cardSelection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class Home extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         home_text_title = findViewById(R.id.home_textView_title);
         home_button_exit = findViewById(R.id.home_button_exit);
+        home_imageButton_cardSelection = findViewById(R.id.home_imageButton_cardSelection);
         user = auth.getCurrentUser();
 
         if (user == null) {
@@ -46,5 +47,18 @@ public class Home extends AppCompatActivity {
                 finish();
             }
         });
+
+        home_imageButton_cardSelection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gameInit();
+            }
+        });
+    }
+
+    private void gameInit() {
+        Intent intentGame = new Intent(getApplicationContext(), Game.class);
+        startActivity(intentGame);
+        finish();
     }
 }

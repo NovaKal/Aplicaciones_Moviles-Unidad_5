@@ -24,4 +24,25 @@
     <string name="home_imageButton_cardBackside_desc">Image button for card backside selection</string>
     <string name="home_imageButton_howToPlay_desc">Image button for information on how to play</string>
     <string name="home_imageButton_aboutUs_desc">Image button for information about us</string>
+
+    <string name="game_row_one_card_one">Row One Card One</string>
+    <string name="game_row_one_card_two">Row one card two</string>
+    <string name="game_one_card_three">row one card three</string>
+    <string name="game_row_one_card_four">row one card four</string>
+    <string name="game_row_two_card_one">row two card one</string>
+    <string name="game_row_two_card_two">row two card two</string>
+    <string name="game_row_two_card_three">row two card three</string>
+    <string name="game_row_two_card_four">row two card four</string>
+    <string name="game_row_three_card_one">row three card one</string>
+    <string name="game_row_three_card_two">row three card two</string>
+    <string name="game_row_three_card_three">row three card three</string>
+    <string name="game_row_three_card_four">row three card four</string>
+    <string name="game_row_four_card_one">row four card one</string>
+    <string name="game_row_four_card_two">row four card two</string>
+    <string name="game_row_four_card_three">row four card three</string>
+    <string name="game_row_four_card_four">row four card four</string>
+    <string name="game_button_exit">Button for exiting to home screen.</string>
+    <string name="game_title">Title</string>
+    <string name="game_button_restart">Restart</string>
+    <string name="game_button_menu">Card Menu</string>
 </resources>

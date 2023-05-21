@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <ImageButton
+        android:id="@+id/game_button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/game_button_exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/game_card_title"
+        android:layout_width="311dp"
+        android:layout_height="44dp"
+        android:text="@string/game_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TableLayout
+        android:id="@+id/game_tableLayout"
+        android:layout_width="412dp"
+        android:layout_height="556dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/game_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/game_card_00"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"
+                android:contentDescription="@string/game_row_one_card_one"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:contentDescription="@string/game_row_one_card_two"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_02"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"
+                android:contentDescription="@string/game_one_card_three"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_03"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="3"
+                android:contentDescription="@string/game_row_one_card_four"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/game_row_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/game_card_10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"
+                android:contentDescription="@string/game_row_two_card_one"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:contentDescription="@string/game_row_two_card_two"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_12"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"
+                android:contentDescription="@string/game_row_two_card_three"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_13"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="3"
+                android:contentDescription="@string/game_row_two_card_four"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/game_row_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/game_card_20"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"
+                android:contentDescription="@string/game_row_three_card_one"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_21"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:contentDescription="@string/game_row_three_card_two"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_22"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"
+                android:contentDescription="@string/game_row_three_card_three"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_23"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="3"
+                android:contentDescription="@string/game_row_three_card_four"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/game_row_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/game_card_30"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"
+                android:contentDescription="@string/game_row_four_card_one"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_31"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:contentDescription="@string/game_row_four_card_two"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_32"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"
+                android:contentDescription="@string/game_row_four_card_three"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/game_card_33"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="3"
+                android:contentDescription="@string/game_row_four_card_four"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="368dp">
+
+            <Button
+                android:id="@+id/game_button_restart"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="@string/game_button_restart"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="732dp" />
+
+            <Button
+                android:id="@+id/game_button_card_menu"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="@string/game_button_menu"
+                tools:layout_editor_absoluteX="241dp"
+                tools:layout_editor_absoluteY="732dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="368dp">
+
+            <TextView
+                android:id="@+id/game_text_points"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
