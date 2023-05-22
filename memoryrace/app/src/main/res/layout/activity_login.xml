@@ -95,7 +95,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/login_button_login"
         android:textSize="20sp"
-        android:backgroundTint="#7fba00"
+        android:backgroundTint="@color/button_green"
         android:contentDescription="@string/login_button_desc"
         app:layout_constraintEnd_toEndOf="@+id/login_textInputLayout_email"
         app:layout_constraintStart_toStartOf="@+id/login_textInputLayout_email"
