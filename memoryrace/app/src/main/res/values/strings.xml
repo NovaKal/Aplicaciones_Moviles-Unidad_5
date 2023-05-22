@@ -45,4 +45,7 @@
     <string name="game_title">Title</string>
     <string name="game_button_restart">Restart</string>
     <string name="game_button_menu">Card Menu</string>
+    <string name="about_footer">Universidad Pontificia Bolivariana - 2023</string>
+    <string name="about_text">This app is designed to improve our memory capacity and cognitive skills. Enjoy the challenge of finding pairs of upside-down cards and sharpen your memory while having fun! Created by Kevin and David for the Aplicaciones Moviles course.</string>
+    <string name="about_title">Memory Race</string>
 </resources>
