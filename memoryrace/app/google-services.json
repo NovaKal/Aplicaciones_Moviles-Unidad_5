@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1075553231201",
-    "project_id": "memory-race",
-    "storage_bucket": "memory-race.appspot.com"
+    "project_number": "480454892323",
+    "project_id": "final-8014d",
+    "storage_bucket": "final-8014d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1075553231201:android:6574ab97a84dd4a52a6520",
+        "mobilesdk_app_id": "1:480454892323:android:01bc6f19ec4189a46f4a96",
         "android_client_info": {
           "package_name": "co.edu.upb.memoryrace"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1075553231201-6i90h1n713hs1ionqe3e88bn4ig6v53a.apps.googleusercontent.com",
+          "client_id": "480454892323-hjvp72m8ncdo14g41rqu3n9rckj54uvp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDZ3kFmgyDaqtcGjsYHWvZjbldIrztW2cA"
+          "current_key": "AIzaSyA-rMRYqV0bO2AxuyQe5x9NMvVbjzXusu8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1075553231201-6i90h1n713hs1ionqe3e88bn4ig6v53a.apps.googleusercontent.com",
+              "client_id": "480454892323-hjvp72m8ncdo14g41rqu3n9rckj54uvp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
