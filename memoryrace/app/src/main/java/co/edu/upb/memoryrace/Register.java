@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +24,7 @@ public class Register extends AppCompatActivity {
 
     TextInputEditText register_email, register_password;
     TextView register_text_login;
+    ImageButton home_button_exit;
     Button register_button;
     FirebaseAuth mAuth;
     ProgressBar progressBar;
@@ -45,9 +47,17 @@ public class Register extends AppCompatActivity {
         register_email = findViewById(R.id.register_editTextTextEmailAddress);
         register_password = findViewById(R.id.register_editTextTextPassword);
         register_button = findViewById(R.id.register_button_register);
+        home_button_exit = findViewById(R.id.game_imageButton_exit);
         progressBar = findViewById(R.id.register_progressBar);
         register_text_login = findViewById(R.id.register_text_login);
         mAuth = FirebaseAuth.getInstance();
+
+        home_button_exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         register_text_login.setOnClickListener(new View.OnClickListener() {
             @Override

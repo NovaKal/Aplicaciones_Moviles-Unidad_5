@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +24,7 @@ public class Login extends AppCompatActivity {
 
     TextInputEditText login_email, login_password;
     TextView login_text_login;
+    ImageButton home_button_exit;
     Button login_button;
     FirebaseAuth mAuth;
     ProgressBar progressBar;
@@ -46,9 +48,17 @@ public class Login extends AppCompatActivity {
         login_email = findViewById(R.id.login_editTextTextEmailAddress);
         login_password = findViewById(R.id.login_editTextTextPassword);
         login_button = findViewById(R.id.login_button_login);
+        home_button_exit = findViewById(R.id.game_imageButton_exit);
         progressBar = findViewById(R.id.login_progressBar);
         login_text_login = findViewById(R.id.login_text_login);
         mAuth = FirebaseAuth.getInstance();
+
+        home_button_exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         login_text_login.setOnClickListener(new View.OnClickListener() {
             @Override

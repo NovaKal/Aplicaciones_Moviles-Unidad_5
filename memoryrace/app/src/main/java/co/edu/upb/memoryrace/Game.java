@@ -18,8 +18,7 @@ import java.util.Collections;
 
 public class Game extends AppCompatActivity {
 
-    ImageButton game_imageButton_exit;
-    Button game_button_restart, game_button_card_menu;
+    ImageButton game_imageButton_exit, game_button_restart;
     ImageButton[] cards = new ImageButton[16];
     TextView game_text_points;
     int points, correct;
@@ -37,9 +36,8 @@ public class Game extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        game_imageButton_exit = findViewById(R.id.game_button_exit);
+        game_imageButton_exit = findViewById(R.id.game_imageButton_exit);
         game_button_restart = findViewById(R.id.game_button_restart);
-        game_button_card_menu = findViewById(R.id.game_button_card_menu);
 
         game_imageButton_exit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,20 +48,14 @@ public class Game extends AppCompatActivity {
             }
         });
 
-        game_button_card_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Here goes card menu Intent
-            }
-        });
-        startGame();
-
         game_button_restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startGame();
             }
         });
+
+        startGame();
     }
 
     private void loadTable() {
