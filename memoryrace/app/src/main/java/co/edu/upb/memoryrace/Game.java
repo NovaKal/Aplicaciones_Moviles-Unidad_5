@@ -133,11 +133,18 @@ public class Game extends AppCompatActivity {
                 paired = false;
                 correct++;
                 points++;
-                game_text_points.setText("Puntuación: " + points);
+                game_text_points.setText(String.format("Points: %d", points));
                 if(correct == images.length){
                     Toast toast = Toast.makeText(getApplicationContext(), "You Win!", Toast.LENGTH_LONG);
                     toast.show();
-
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Intent intentHome = new Intent(getApplicationContext(), Home.class);
+                            startActivity(intentHome);
+                            finish();
+                        }
+                    },1000);
                 }
             } else {
                 handler.postDelayed(new Runnable() {

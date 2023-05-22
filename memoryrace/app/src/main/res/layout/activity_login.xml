@@ -3,15 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_1" >
+
+    <ImageButton
+        android:id="@+id/home_button_exit"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/home_button_exit_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/leave_small" />
 
     <TextView
         android:id="@+id/login_textView_title"
-        android:layout_width="370dp"
-        android:layout_height="40dp"
+        android:layout_width="359dp"
+        android:layout_height="54dp"
         android:layout_marginTop="228dp"
         android:gravity="center"
         android:text="@string/login_title"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,6 +50,9 @@
             android:layout_weight="1"
             android:autofillHints="emailAddress"
             android:ems="10"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:hint="@string/login_email_hint"
             android:importantForAutofill="yes"
             android:inputType="textEmailAddress"
@@ -54,8 +75,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:autofillHints="emailAddress"
+            android:autofillHints="password"
             android:ems="10"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:hint="@string/login_password_hint"
             android:importantForAutofill="yes"
             android:inputType="textPassword"
@@ -70,6 +94,8 @@
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
         android:text="@string/login_button_login"
+        android:textSize="20sp"
+        android:backgroundTint="@color/button_green"
         android:contentDescription="@string/login_button_desc"
         app:layout_constraintEnd_toEndOf="@+id/login_textInputLayout_email"
         app:layout_constraintStart_toStartOf="@+id/login_textInputLayout_email"
@@ -81,23 +107,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login_text_register"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/login_textView_title"
         app:layout_constraintStart_toStartOf="@+id/login_textView_title"
         app:layout_constraintTop_toBottomOf="@+id/login_button_login" />
-
-    <ImageButton
-        android:id="@+id/login_imageButton_exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/login_button_exit_desc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019"
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
     <ProgressBar
         android:id="@+id/login_progressBar"

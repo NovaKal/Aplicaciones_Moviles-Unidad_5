@@ -12,8 +12,8 @@
     <string name="login_button_exit_desc">Button for exiting the app</string>
 
     <string name="register_title">Register</string>
-    <string name="register_email_hint">Enter E-mail</string>
-    <string name="register_password_hint">Enter Password</string>
+    <string name="register_email_hint">E-mail</string>
+    <string name="register_password_hint">Password</string>
     <string name="register_button_register">Register</string>
     <string name="register_button_desc">Button for register</string>
     <string name="register_text_login">Already Registered? Join Here!</string>
@@ -42,7 +42,7 @@
     <string name="game_row_four_card_three">row four card three</string>
     <string name="game_row_four_card_four">row four card four</string>
     <string name="game_button_exit">Button for exiting to home screen.</string>
-    <string name="game_title">Title</string>
+    <string name="game_title">Find the match!</string>
     <string name="game_button_restart">Restart</string>
     <string name="game_button_menu">Card Menu</string>
 </resources>
