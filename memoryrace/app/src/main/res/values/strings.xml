@@ -42,7 +42,7 @@
     <string name="game_row_four_card_three">row four card three</string>
     <string name="game_row_four_card_four">row four card four</string>
     <string name="game_button_exit">Button for exiting to home screen.</string>
-    <string name="game_title">Title</string>
+    <string name="game_title">Find the match!</string>
     <string name="game_button_restart">Restart</string>
     <string name="game_button_menu">Card Menu</string>
     <string name="about_footer">Universidad Pontificia Bolivariana - 2023</string>

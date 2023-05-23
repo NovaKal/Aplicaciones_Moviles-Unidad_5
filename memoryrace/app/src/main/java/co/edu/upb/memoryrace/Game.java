@@ -6,20 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Game extends AppCompatActivity {
 
-    ImageButton game_imageButton_exit;
-    Button game_button_restart, game_button_card_menu;
+    ImageButton game_imageButton_exit, game_button_restart;
     ImageButton[] cards = new ImageButton[16];
     TextView game_text_points;
     int points, correct;
@@ -37,9 +34,8 @@ public class Game extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        game_imageButton_exit = findViewById(R.id.game_button_exit);
+        game_imageButton_exit = findViewById(R.id.game_imageButton_exit);
         game_button_restart = findViewById(R.id.game_button_restart);
-        game_button_card_menu = findViewById(R.id.game_button_card_menu);
 
         game_imageButton_exit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,20 +46,14 @@ public class Game extends AppCompatActivity {
             }
         });
 
-        game_button_card_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Here goes card menu Intent
-            }
-        });
-        startGame();
-
         game_button_restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startGame();
             }
         });
+
+        startGame();
     }
 
     private void loadTable() {
@@ -89,7 +79,7 @@ public class Game extends AppCompatActivity {
         game_text_points = findViewById(R.id.game_text_points);
         points = 0;
         correct = 0;
-        game_text_points.setText("Points: " + points);
+        game_text_points.setText(String.format("Points: %d", points));
     }
 
     private void loadImages() {
@@ -133,11 +123,18 @@ public class Game extends AppCompatActivity {
                 paired = false;
                 correct++;
                 points++;
-                game_text_points.setText("Puntuación: " + points);
+                game_text_points.setText(String.format("Points: %d", points));
                 if(correct == images.length){
                     Toast toast = Toast.makeText(getApplicationContext(), "You Win!", Toast.LENGTH_LONG);
                     toast.show();
-
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Intent intentHome = new Intent(getApplicationContext(), Home.class);
+                            startActivity(intentHome);
+                            finish();
+                        }
+                    },1000);
                 }
             } else {
                 handler.postDelayed(new Runnable() {
@@ -152,7 +149,7 @@ public class Game extends AppCompatActivity {
                         paired = false;
                         first_selection = null;
                         points--;
-                        game_text_points.setText("Points: " + points);
+                        game_text_points.setText(String.format("Points: %d", points));
                     }
                 }, 1000);
             }
@@ -171,9 +168,9 @@ public class Game extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < cards.length; i++) {
-                    cards[i].setScaleType(ImageView.ScaleType.CENTER_CROP);
-                    cards[i].setImageResource(card_background);
+                for (ImageButton card : cards) {
+                    card.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                    card.setImageResource(card_background);
                 }
             }
         }, 1000);
