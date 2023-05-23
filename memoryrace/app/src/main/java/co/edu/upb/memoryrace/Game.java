@@ -134,7 +134,7 @@ public class Game extends AppCompatActivity {
                             startActivity(intentHome);
                             finish();
                         }
-                    },1000);
+                    },1500);
                 }
             } else {
                 handler.postDelayed(new Runnable() {
@@ -173,7 +173,7 @@ public class Game extends AppCompatActivity {
                     card.setImageResource(card_background);
                 }
             }
-        }, 1000);
+        }, 2000);
         for (int i = 0; i < cards.length; i++) {
             final int j = i;
             cards[i].setEnabled(true);

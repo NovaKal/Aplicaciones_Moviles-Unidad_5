@@ -25,26 +25,27 @@
         android:id="@+id/game_card_title"
         android:layout_width="311dp"
         android:layout_height="44dp"
+        android:gravity="center"
         android:text="@string/game_title"
         android:textColor="@android:color/black"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/game_tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.767" />
 
     <TableLayout
         android:id="@+id/game_tableLayout"
         android:layout_width="412dp"
-        android:layout_height="556dp"
+        android:layout_height="719dp"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
             android:id="@+id/game_row_one"
@@ -54,32 +55,32 @@
 
             <ImageButton
                 android:id="@+id/game_card_00"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="0"
                 android:contentDescription="@string/game_row_one_card_one"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_01"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="1"
                 android:contentDescription="@string/game_row_one_card_two"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_02"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="2"
                 android:contentDescription="@string/game_one_card_three"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_03"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="3"
                 android:contentDescription="@string/game_row_one_card_four"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
@@ -93,32 +94,32 @@
 
             <ImageButton
                 android:id="@+id/game_card_10"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="0"
                 android:contentDescription="@string/game_row_two_card_one"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_11"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="1"
                 android:contentDescription="@string/game_row_two_card_two"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_12"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="2"
                 android:contentDescription="@string/game_row_two_card_three"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_13"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="3"
                 android:contentDescription="@string/game_row_two_card_four"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
@@ -132,32 +133,32 @@
 
             <ImageButton
                 android:id="@+id/game_card_20"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="0"
                 android:contentDescription="@string/game_row_three_card_one"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_21"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="1"
                 android:contentDescription="@string/game_row_three_card_two"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_22"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="2"
                 android:contentDescription="@string/game_row_three_card_three"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_23"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="3"
                 android:contentDescription="@string/game_row_three_card_four"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
@@ -171,32 +172,32 @@
 
             <ImageButton
                 android:id="@+id/game_card_30"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="0"
                 android:contentDescription="@string/game_row_four_card_one"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_31"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="1"
                 android:contentDescription="@string/game_row_four_card_two"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_32"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="2"
                 android:contentDescription="@string/game_row_four_card_three"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
                 android:id="@+id/game_card_33"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_column="3"
                 android:contentDescription="@string/game_row_four_card_four"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
@@ -226,7 +227,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="67dp"
             android:layout_marginTop="50dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
