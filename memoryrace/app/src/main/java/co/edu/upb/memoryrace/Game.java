@@ -40,7 +40,7 @@ public class Game extends AppCompatActivity {
         game_imageButton_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentHome = new Intent();
+                Intent intentHome = new Intent(getApplicationContext(), Home.class);
                 startActivity(intentHome);
                 finish();
             }
